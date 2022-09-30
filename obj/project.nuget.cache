@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OarjI8+ueEY/FmU7Nx8iFycaoM3WQkFkzRP014flb8jU43rUdrsSZzRIy+Ti7sFj1MKgg+iuuLHac9ebUWlmaQ==",
+  "success": true,
+  "projectFilePath": "/home/allan/projects/csharp/test-web-dotnet5/test-web-dotnet5.csproj",
+  "expectedPackageFiles": [
+    "/home/allan/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
