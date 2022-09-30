@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="margin:5px;display:flex ;justify-content:center; align-items:center;flex-direction:column;">
+        <label>Digite o nome:</label>
+        <input id="name" type="text">
+        <button id="send">Click</button>
+    </div>
+    <script>
+        const button = document.querySelector("#send")
+        button.addEventListener("click", e => {
+            const Name = document.querySelector("#name").value
+            const payload = JSON.stringify({ Name })
+            
+            console.log("payload: ", payload)
+
+            const resp = fetch("http://localhost:5000/user", {body: payload, method: 'POST'})
+            resp.then(data => data.json().then(obj => console.log(obj)))
+
+        })
+        const resp = fetch("http://localhost:5000")
+        resp.then(data => data.json().then(obj => console.log(obj)))
+    </script>
+</body>
+
+</html>
